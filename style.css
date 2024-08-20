@@ -404,6 +404,10 @@ tbody::-webkit-scrollbar-thumb {
 }
 
 .patient-name {
+<<<<<<< HEAD
+=======
+    font-size: 24px;
+>>>>>>> 9755546cf8d0d045cf3a187ebb37e3c4662eb88b
     margin-top: 15px;
 }
 
@@ -414,6 +418,10 @@ tbody::-webkit-scrollbar-thumb {
 }
 
 .patient-prl-data {
+<<<<<<< HEAD
+=======
+    display: block;
+>>>>>>> 9755546cf8d0d045cf3a187ebb37e3c4662eb88b
     margin-top: 64px;
 }
 
@@ -529,6 +537,7 @@ tbody::-webkit-scrollbar-thumb {
     border-radius: 6px;
 }
 
+<<<<<<< HEAD
 
 
 .footer-ref {
@@ -597,10 +606,17 @@ tbody::-webkit-scrollbar-thumb {
 
     .chart-container {
         height: 640px;
+=======
+@media only screen and (max-device-width: 600px) {
+
+    .chart-container {
+        height: 421px;
+>>>>>>> 9755546cf8d0d045cf3a187ebb37e3c4662eb88b
     }
 
     .mobile-screen {
         display: flex;
+<<<<<<< HEAD
         justify-content: space-around;
         margin-top: 53px;
     }
@@ -645,5 +661,18 @@ tbody::-webkit-scrollbar-thumb {
 
     .chart-container {
         height: 385px;
+=======
+        margin-top: 35px;
+        padding-left: 10px;
+        gap: 20px;
+    }
+
+    .level-content {
+        margin-bottom: 15px;
+    }
+
+    tbody {
+        max-height: 156px;
+>>>>>>> 9755546cf8d0d045cf3a187ebb37e3c4662eb88b
     }
 }
