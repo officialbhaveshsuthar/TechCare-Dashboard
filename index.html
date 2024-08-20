@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -45,11 +46,8 @@
                 </ul>
                 <div class="profile-name">
                     <div class="admin-profile">
-                        <img
-                            src="img/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc (1)/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png">
-                        <img
-                            src="img/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png">
-                        alt="Profile">
+                        <img src="img/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc (1)/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
+                            alt="Profile">
                         <p>Dr. Jose Simmons <br><span>General Practitioner</span></p>
                     </div>
                     <div class="admin-setting">
@@ -67,285 +65,238 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-lg-3 col-sm-12">
-
-                <div class="col-md-3 col-lg-3 col-sm-12">
-
-                    <div class="patients">
-                        <div class="patient-head">
-                            <div class="patients-main-content">
-                                <h5>Patients</h5>
-                            </div>
-                            <div class="patients-main-content">
-                                <img src="img/search_FILL0_wght300_GRAD0_opsz24.svg" alt="Search">
-                            </div>
+                <div class="patients">
+                    <div class="patient-head">
+                        <div class="patients-main-content">
+                            <h5>Patients</h5>
                         </div>
-                        <div id="patients-container"></div>
+                        <div class="patients-main-content">
+                            <img src="img/search_FILL0_wght300_GRAD0_opsz24.svg" alt="Search">
+                        </div>
                     </div>
+                    <div id="patients-container"></div>
                 </div>
-                <div class="col-md-12 col-lg-6 col-sm-12">
-
-                    <div class="col-md-6 col-lg-6 col-sm-12">
-
-                        <div class="diagnostics-box-content">
-                            <div class="chart-box1">
-                                <div class="diagnostics-content">
-                                    <h5>Diagnosis History</h5>
+            </div>
+            <div class="col-md-12 col-lg-6 col-sm-12">
+                <div class="diagnostics-box-content">
+                    <div class="chart-box1">
+                        <div class="diagnostics-content">
+                            <h5>Diagnosis History</h5>
+                        </div>
+                        <div class="chart-container">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-12 col-sm-12">
+                                    <div class="chart-content-main-data">
+                                        <div class="chart-box2">
+                                            <div class="chart-data-head">
+                                                <h5>Blood Pressure
+                                                </h5>
+                                            </div>
+                                            <div class="chart-data-head2">
+                                                <p>Last 6 Month</p>
+                                                <img src="img/expand_more_FILL0_wght300_GRAD0_opsz24.svg"
+                                                    alt="expand_more_month">
+                                            </div>
+                                        </div>
+                                        <canvas id="myChart"></canvas>
+                                    </div>
                                 </div>
-                                <div class="chart-container">
-                                    <div class="row">
-                                        <div class="col-lg-8 col-md-12 col-sm-12">
-
-                                            <div class="col-lg-8 col-md-8 col-sm-12">
-
-                                                <div class="chart-content-main-data">
-                                                    <div class="chart-box2">
-                                                        <div class="chart-data-head">
-                                                            <h5>Blood Pressure
-                                                            </h5>
-                                                        </div>
-                                                        <div class="chart-data-head2">
-                                                            <p>Last 6 Month</p>
-                                                            <img src="img/expand_more_FILL0_wght300_GRAD0_opsz24.svg"
-                                                                alt="expand_more_month">
-                                                        </div>
-                                                    </div>
-                                                    <canvas id="myChart"></canvas>
-                                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="mobile-screen">
+                                        <div class="chart-labels-content">
+                                            <div class="label-name">
+                                                <div class="circle"></div>
+                                                <h6>Systolic</h6>
                                             </div>
-                                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                                    <div class="mobile-screen">
-                                                        <div class="chart-labels-content">
-                                                            <div class="label-name">
-                                                                <div class="circle"></div>
-                                                                <h6>Systolic</h6>
-                                                            </div>
-                                                            <p id="systolic-value">160</p>
-                                                            <div class="chart-tem-av">
-                                                                <img src="img/ArrowUp.svg" alt="aroowup">
-                                                                <h6 id="s-levls">Higher than Average</h6>
-                                                            </div>
-                                                        </div>
-                                                        <hr>
-                                                        <div class="chart-labels-content">
-                                                            <div class="label-name">
-                                                                <div class="circle2"></div>
-                                                                <h6>Diastolic</h6>
-                                                            </div>
-                                                            <p id="diastolic-value">78</p>
-                                                            <div class="chart-tem-av">
-                                                                <img src="img/ArrowDown.svg" alt="aroowup">
-                                                                <h6 id="d-levls">Lower than Average</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <p id="systolic-value">160</p>
+                                            <div class="chart-tem-av">
+                                                <img src="img/ArrowUp.svg" alt="aroowup">
+                                                <h6 id="s-levls">Higher than Average</h6>
                                             </div>
                                         </div>
-                                        <div class="level-content-flex">
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-4 col-sm-12">
-
-                                                    <div class="col-md-4 col-lg-4 col-sm-12">
-
-                                                        <div class="level-content" id="level-content1">
-                                                            <img src="img/respiratory rate.svg" alt="Respiratory icon">
-                                                            <h5>Respiratory Rate</h5>
-                                                            <p class="tem-rate"><span id="respiratory-rate">20</span>
-                                                                bpm</p>
-                                                            <p class="tem-nm">Normal</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12 col-lg-4 col-sm-12">
-
-                                                        <div class="col-md-4 col-lg-4 col-sm-12">
-                                                            <div class="level-content" id="level-content2">
-                                                                <img src="img/temperature.svg" alt="temperature icon">
-                                                                <h5>Temperature</h5>
-                                                                <p class="tem-rate"><span id="temperature">98.6</span>
-                                                                    °F</p>
-                                                                <p id="temperature-status">Normal</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-12 col-lg-4 col-sm-12">
-                                                            <div class="col-md-4 col-lg-4 col-sm-12">
-                                                                <div class="level-content" id="level-content2">
-                                                                    <img src="img/HeartBPM.svg" alt="HeartBPM">
-                                                                    <h5>Heart Rate</h5>
-                                                                    <p class="tem-rate"> <span id="heart-rate">78</span>
-                                                                        bpm</p>
-                                                                    <div class="level-box">
-                                                                        <div class="level-content2">
-                                                                            <img src="img/ArrowDown.svg"
-                                                                                alt="Arrow Down">
-                                                                            <p id="heart-rate-status">Lower than Average
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <hr>
+                                        <div class="chart-labels-content">
+                                            <div class="label-name">
+                                                <div class="circle2"></div>
+                                                <h6>Diastolic</h6>
                                             </div>
-
-                                            <div class="diagnostics-box-content-data">
-                                                <div class="diagnostics-list-content2">
-                                                    <h5>Diagnostic List</h5>
-                                                </div>
-                                                <div class="diagnosctic-table-content">
-                                                    <div class="table-responsive">
-                                                        <table id="diagnostic-list tbody" class="table py-20">
-                                                            <tr>
-                                                                <th>Problem / Diagnosis</th>
-                                                                <th>Description</th>
-                                                                <th>Status</th>
-                                                            </tr>
-                                                            <tbody class="table-body">
-                                                                <tr>
-                                                                    <td colspan="2">Hypertension</td>
-                                                                    <td colspan="2">Chronic high blood pressure</td>
-                                                                    <td colspan="2">Under Observation</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td colspan="2">Type 2 Diabetes</td>
-                                                                    <td colspan="2">Insulin resistance and elevated
-                                                                        blood sugar</td>
-                                                                    <td colspan="2">Cured</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td colspan="2">Asthma</td>
-                                                                    <td colspan="2">Recurrent episodes of bronchial
-                                                                        constriction</td>
-                                                                    <td colspan="2">Inactive</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
+                                            <p id="diastolic-value">78</p>
+                                            <div class="chart-tem-av">
+                                                <img src="img/ArrowDown.svg" alt="aroowup">
+                                                <h6 id="d-levls">Lower than Average</h6>
                                             </div>
-                                        </div>
-                                        <div class="col-md-12 col-lg-3 col-sm-12">
-
-                                            <div class="col-md-3 col-lg-3 col-sm-12">
-
-                                                <div class="patient-profile-data" id="profile-data">
-                                                    <div class="profile-content">
-                                                        <div class="profile-img" id="patientimg">
-                                                            <img src="img/Layer 2/Layer 2@2x.png" alt="">
-                                                        </div>
-                                                        <div class="patient-name" id="patientname">
-                                                            <h5>Jessica Taylor</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="patient-prl">
-                                                        <div class="patient-prl-data">
-                                                            <div class="prl-data">
-                                                                <div class="prl-data-all">
-                                                                    <img src="img/BirthIcon.png" alt="BirthIcon">
-                                                                    <p>Date Of Birth <span id="birth">08/23/1996</span>
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="prl-data">
-                                                                <div class="prl-data-all">
-                                                                    <img src="img/FemaleIcon.png" alt="gender-icon">
-                                                                    <p>Gender <span id="gender">Female</span></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="prl-data">
-                                                                <div class="prl-data-all">
-                                                                    <img src="img/PhoneIcon.png" alt="PhoneIcon">
-                                                                    <p>Contact Info. <span id="contact">(415)
-                                                                            555-1234</span></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="prl-data">
-                                                                <div class="prl-data-all">
-                                                                    <img src="img/PhoneIcon.png" alt="PhoneIcon">
-
-                                                                    <img src="/img/PhoneIcon.png" alt="PhoneIcon">
-
-                                                                    <p>Emergency Contacts <span
-                                                                            id="emergencynumber">(415)
-                                                                            555-5678</span></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="prl-data">
-                                                                <div class="prl-data-all">
-                                                                    <img src="img/InsuranceIcon.svg"
-                                                                        alt="InsuranceIcon">
-
-                                                                    <img src="/img/InsuranceIcon.svg"
-                                                                        alt="InsuranceIcon">
-
-                                                                    <p>Insurance Provider <span
-                                                                            id="insuprovider">Sunrise Health
-                                                                            Assurance</span></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="more-info-btn">
-                                                                <a href="#">
-                                                                    <button class="more-info">Show All
-                                                                        Information</button>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="lab-result-content">
-                                                    <div class="lab-result-data">
-                                                        <div class="lab-result-data-area">
-                                                            <div class="lab-result-data-head">
-                                                                <h5>Lab Results</h5>
-                                                            </div>
-                                                            <div class="lab-result-content2" id="lab-results">
-                                                                <div class="lab-result-data2">
-                                                                    <p>Blood Tests</p>
-                                                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png"
-                                                                        alt="">
-                                                                </div>
-                                                                <div class="lab-result-data2">
-                                                                    <p>CT Scans</p>
-                                                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png"
-                                                                        alt="">
-                                                                </div>
-                                                                <div class="lab-result-data2">
-                                                                    <p>Radiology Reports</p>
-                                                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png"
-                                                                        alt="">
-                                                                </div>
-                                                                <div class="lab-result-data2">
-                                                                    <p>X-Rays</p>
-                                                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png"
-                                                                        alt="">
-                                                                </div>
-                                                                <div class="lab-result-data2">
-                                                                    <p>Urine Test</p>
-                                                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png"
-                                                                        alt="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <footer>
-                                                <div class="container-fluid">
-                                                    <div class="footer-ref">
-                                                        <p>
-                                                            Copyright reserved by Bhavesh Suthar @ 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </footer>
-
                                         </div>
                                     </div>
-                                    <script
-                                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                                    <script src="script.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="level-content-flex">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-4 col-sm-12">
+                                    <div class="level-content" id="level-content1">
+                                        <img src="img/respiratory rate.svg" alt="Respiratory icon">
+                                        <h5>Respiratory Rate</h5>
+                                        <p class="tem-rate"><span id="respiratory-rate">20</span> bpm</p>
+                                        <p class="tem-nm">Normal</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4 col-sm-12">
+                                    <div class="level-content" id="level-content2">
+                                        <img src="img/temperature.svg" alt="temperature icon">
+                                        <h5>Temperature</h5>
+                                        <p class="tem-rate"><span id="temperature">98.6</span> °F</p>
+                                        <p id="temperature-status">Normal</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-4 col-sm-12">
+                                    <div class="level-content" id="level-content2">
+                                        <img src="img/HeartBPM.svg" alt="HeartBPM">
+                                        <h5>Heart Rate</h5>
+                                        <p class="tem-rate"> <span id="heart-rate">78</span> bpm</p>
+                                        <div class="level-box">
+                                            <div class="level-content2">
+                                                <img src="img/ArrowDown.svg" alt="Arrow Down">
+                                                <p id="heart-rate-status">Lower than Average</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diagnostics-box-content-data">
+                    <div class="diagnostics-list-content2">
+                        <h5>Diagnostic List</h5>
+                    </div>
+                    <div class="diagnosctic-table-content">
+                        <div class="table-responsive">
+                            <table id="diagnostic-list tbody" class="table py-20">
+                                <tr>
+                                    <th>Problem / Diagnosis</th>
+                                    <th>Description</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td colspan="2">Hypertension</td>
+                                        <td colspan="2">Chronic high blood pressure</td>
+                                        <td colspan="2">Under Observation</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Type 2 Diabetes</td>
+                                        <td colspan="2">Insulin resistance and elevated blood sugar</td>
+                                        <td colspan="2">Cured</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Asthma</td>
+                                        <td colspan="2">Recurrent episodes of bronchial constriction</td>
+                                        <td colspan="2">Inactive</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3 col-sm-12">
+                <div class="patient-profile-data" id="profile-data">
+                    <div class="profile-content">
+                        <div class="profile-img" id="patientimg">
+                            <img src="img/Layer 2/Layer 2@2x.png" alt="">
+                        </div>
+                        <div class="patient-name" id="patientname">
+                            <h5>Jessica Taylor</h5>
+                        </div>
+                    </div>
+                    <div class="patient-prl">
+                        <div class="patient-prl-data">
+                            <div class="prl-data">
+                                <div class="prl-data-all">
+                                    <img src="img/BirthIcon.png" alt="BirthIcon">
+                                    <p>Date Of Birth <span id="birth">08/23/1996</span></p>
+                                </div>
+                            </div>
+                            <div class="prl-data">
+                                <div class="prl-data-all">
+                                    <img src="img/FemaleIcon.png" alt="gender-icon">
+                                    <p>Gender <span id="gender">Female</span></p>
+                                </div>
+                            </div>
+                            <div class="prl-data">
+                                <div class="prl-data-all">
+                                    <img src="img/PhoneIcon.png" alt="PhoneIcon">
+                                    <p>Contact Info. <span id="contact">(415) 555-1234</span></p>
+                                </div>
+                            </div>
+                            <div class="prl-data">
+                                <div class="prl-data-all">
+                                    <img src="img/PhoneIcon.png" alt="PhoneIcon">
+                                    <p>Emergency Contacts <span id="emergencynumber">(415) 555-5678</span></p>
+                                </div>
+                            </div>
+                            <div class="prl-data">
+                                <div class="prl-data-all">
+                                    <img src="img/InsuranceIcon.svg" alt="InsuranceIcon">
+                                    <p>Insurance Provider <span id="insuprovider">Sunrise Health
+                                            Assurance</span></p>
+                                </div>
+                            </div>
+                            <div class="more-info-btn">
+                                <a href="#">
+                                    <button class="more-info">Show All Information</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lab-result-content">
+                    <div class="lab-result-data">
+                        <div class="lab-result-data-area">
+                            <div class="lab-result-data-head">
+                                <h5>Lab Results</h5>
+                            </div>
+                            <div class="lab-result-content2" id="lab-results">
+                                <div class="lab-result-data2">
+                                    <p>Blood Tests</p>
+                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png" alt="">
+                                </div>
+                                <div class="lab-result-data2">
+                                    <p>CT Scans</p>
+                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png" alt="">
+                                </div>
+                                <div class="lab-result-data2">
+                                    <p>Radiology Reports</p>
+                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png" alt="">
+                                </div>
+                                <div class="lab-result-data2">
+                                    <p>X-Rays</p>
+                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png" alt="">
+                                </div>
+                                <div class="lab-result-data2">
+                                    <p>Urine Test</p>
+                                    <img src="img/download_FILL0_wght300_GRAD0_opsz24 (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container-fluid">
+                    <div class="footer-ref">
+                        <p>
+                            Copyright reserved by Bhavesh Suthar @ 2024
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
