@@ -627,19 +627,22 @@ tbody::-webkit-scrollbar-thumb {
         height: 450px;
     }
 }
+
 @media screen and (max-width:476px) {
     tbody {
-     
+
         max-height: 158px;
-    
+
     }
+
     .chart-tem-av h6 {
         font-size: 12px;
     }
 
-    .footer-ref p{
+    .footer-ref p {
         font-size: 12px;
     }
+
     .chart-container {
         height: 385px;
     }
