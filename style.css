@@ -602,7 +602,7 @@ tbody::-webkit-scrollbar-thumb {
     .mobile-screen {
         display: flex;
         justify-content: space-around;
-        margin-top: 53px;
+        margin-top: 26px;
     }
 
     .label-name h6 {
