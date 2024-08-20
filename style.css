@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+}
+
+.navbar {
+    border-radius: 50px;
+    margin: 12px;
+}
+
+.nav-item {
+    margin-right: 15px;
+    padding: 6px;
+}
+
+.nav-link {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+
+}
+
+.menubar {
+    background-color: #01F0D0;
+    border-radius: 50px;
+}
+
+.nav-link img {
+    margin-right: 5px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.profile-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-right: 10px;
+    font-family: "Manrope", sans-serif;
+}
+
+.admin-profile span {
+    font-size: 14px;
+    color: #707070;
+    font-weight: lighter;
+}
+
+.admin-profile p {
+    height: 19px;
+    color: #072635;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.admin-setting {
+    border-left: 2px solid #e9ecef;
+}
+
+.admin-setting img {
+    margin-left: 9px;
+}
+
+#patients-container {
+    max-height: 91%;
+    overflow-y: auto;
+    display: block;
+    width: 100%;
+}
+
+#patients-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+#patients-container::-webkit-scrollbar-track {
+    background: #E3E4E6;
+    border-radius: 10px;
+}
+
+#patients-container::-webkit-scrollbar-thumb {
+    background-color: #072635;
+    border-radius: 10px;
+    border: 1px solid #E3E4E6;
+}
+
+.patients {
+    margin-bottom: 20px;
+    background-color: #fff;
+    height: 1070px;
+    border-radius: 20px;
+}
+
+.patient-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.patient-more img {
+    width: 18px !important;
+    height: 4px;
+}
+
+.patients-main-content {
+    margin-top: 8px;
+}
+
+.patients-main-content h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #072635;
+    font-family: "Manrope", sans-serif;
+}
+
+.patients-profile-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    transition: 0.3s linear;
+}
+
+.patientbg {
+    background-color: #D8FCF7;
+    transition: 0.5s;
+}
+
+
+.patients-profile-data img {
+    width: 48px;
+}
+
+.picture-dp-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-right: 10px;
+}
+
+.picture-dp-name p {
+    height: 27px;
+    color: #072635;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+}
+
+.picture-dp-name span {
+    display: block;
+    font-size: 14px;
+    color: #707070;
+    font-weight: lighter;
+    font-family: "Manrope", sans-serif;
+}
+
+.diagnostics-box-content {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+.chart-container {
+    background-color: #F4F0FE;
+    padding: 10px;
+    border-radius: 12px;
+    height: 338px;
+    margin-top: 40px;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    background-color: #ff6384;
+    border-radius: 50px;
+}
+
+.circle2 {
+    width: 14px;
+    height: 14px;
+    background-color: #3fa6ec;
+    border-radius: 50px;
+}
+
+.chart-labels-content p {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+.label-name,
+.chart-tem-av {
+    display: ruby;
+}
+
+.chart-tem-av h6 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.label-name h6 {
+    font-size: 14px;
+    color: #072635;
+    font-weight: bold;
+}
+
+.chart-box2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-data-head h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #072635;
+    font-family: "Manrope", sans-serif;
+}
+
+.chart-data-head2 {
+    display: -webkit-inline-box;
+    gap: 12px;
+}
+
+.chart-data-head2 img {
+    width: 10.65px;
+    height: 6px;
+}
+
+.chart-data-head2 p {
+    color: #072635;
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
+}
+
+.diagnostics-content {
+    margin-top: 8px;
+}
+
+.diagnostics-content h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #072635;
+    font-family: "Manrope", sans-serif;
+}
+
+
+#patient-chart {
+    height: 254px !important;
+}
+
+.level-content-flex {
+    margin-top: 25px;
+}
+
+.level-content {
+    padding: 15px;
+    border-radius: 12px;
+    font-family: "Manrope", sans-serif;
+    color: #072635;
+}
+
+#level-content1 {
+    background-color: #E0F3FA;
+}
+
+#level-content2 {
+    background-color: #FFE6E9;
+}
+
+.level-box {
+    display: flex;
+}
+
+.level-content2 {
+    display: -webkit-inline-box;
+    gap: 15px;
+}
+
+.level-content h5 {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.temperature-cate {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.tem-rate {
+    font-weight: 700;
+    color: #072635;
+    font-size: 30px;
+}
+
+.tem-nm {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.diagnostics-box-content-data {
+    background-color: #fff;
+    border-radius: 15px;
+    height: 321px;
+    padding: 15px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.diagnostics-list-content2 h5 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.diagnosctic-table-content {
+    display: block;
+    width: 100%;
+    max-height: 338px;
+}
+
+table {
+    font-family: "Manrope", sans-serif;
+    margin-top: 20px;
+}
+
+td {
+    padding-bottom: 30px !important;
+}
+
+th {
+    background-color: #F6F7F8 !important;
+}
+
+tbody {
+    display: block;
+    max-height: 181px;
+    overflow-y: auto;
+}
+
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+tbody::-webkit-scrollbar {
+    width: 8px;
+}
+
+tbody::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+tbody::-webkit-scrollbar-thumb {
+    background: #072635;
+    border-radius: 15px;
+}
+
+.profile-box-content h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #072635;
+    font-family: "Manrope", sans-serif;
+}
+
+.patient-profile-data {
+    background-color: #fff;
+    border-radius: 15px;
+    margin-left: 1px;
+    height: 750px;
+    padding: 15px;
+}
+
+.profile-content {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+}
+
+.patient-name {
+    margin-top: 15px;
+}
+
+.patient-name h5 {
+    font-size: 24px;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+}
+
+.patient-prl-data {
+    margin-top: 64px;
+}
+
+.prl-data-all {
+    display: flex;
+    height: 65px;
+}
+
+.prl-data-all p {
+    margin-left: 15px;
+    color: #072635;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+}
+
+.prl-data-all img {
+    width: 42px;
+    height: 42px;
+}
+
+.prl-data-all span {
+    display: block;
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+}
+
+.more-info-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 26px;
+}
+
+.more-info-btn button {
+    background-color: #01F0D0;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 41px;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+}
+
+.lab-result-content {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 23px;
+}
+
+.lab-result-data {
+    display: flex;
+    align-items: center;
+}
+
+.lab-result-data-area {
+    width: 100%;
+}
+
+.lab-result-content h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #072635;
+    font-family: "Manrope", sans-serif;
+    margin-top: 8px;
+}
+
+.lab-result-content2 {
+    padding: 15px;
+    display: block;
+    width: 100%;
+}
+
+.lab-result-data2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.lab-result-data2 p {
+    font-size: 13px;
+    font-family: "Manrope", sans-serif;
+    font-weight: normal;
+    color: #072635;
+}
+
+.lab-result-data2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.lab-result-content2 {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 220px;
+    padding: 10px;
+}
+
+.lab-result-content2::-webkit-scrollbar {
+    width: 8px;
+}
+
+.lab-result-content2::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+.lab-result-content2::-webkit-scrollbar-thumb {
+    background: #072635;
+    border-radius: 6px;
+}
+
+
+
+.footer-ref {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-ref p {
+    color: gray;
+    margin: 0;
+}
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .testLogo {
+        width: 148px;
+        height: 51px;
+    }
+
+    .nav-item {
+        margin-right: -7px;
+    }
+
+    .patients {
+        height: 1180px;
+    }
+
+    .diagnostics-box-content-data {
+        height: 411px;
+    }
+
+    .lab-result-content {
+        height: 401px;
+    }
+
+    .lab-result-content2 {
+        height: 323px;
+    }
+
+    tbody {
+        max-height: 263px;
+    }
+
+    .chart-tem-av h6 {
+        font-size: 12px;
+    }
+
+    #myChart {
+        height: 250px !important;
+    }
+
+    .level-content {
+        height: 263px;
+    }
+}
+
+@media screen and (max-width:993px) {
+    .level-content {
+        margin-bottom: 15px;
+    }
+
+    .chart-container {
+        height: 640px;
+    }
+
+    .mobile-screen {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 53px;
+    }
+
+    .label-name h6 {
+        font-size: 18px;
+    }
+
+    .chart-labels-content p {
+        font-size: 22px;
+    }
+
+    .chart-tem-av h6 {
+        font-size: 18px;
+    }
+
+    .footer-ref {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .chart-container {
+        height: 450px;
+    }
+}
+@media screen and (max-width:476px) {
+    tbody {
+     
+        max-height: 158px;
+    
+    }
+    .chart-tem-av h6 {
+        font-size: 12px;
+    }
+
+    .footer-ref p{
+        font-size: 12px;
+    }
+    .chart-container {
+        height: 385px;
+    }
+}
